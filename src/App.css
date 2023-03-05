@@ -14,3 +14,45 @@ header {
   color: white;
 }
 
+.app-body-container {
+  background-color:#4f5d7461;
+  width: 300px;
+  padding: 15px;
+  padding-bottom: 50px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.divider-svg {
+margin-top: 20px;
+
+}
+
+.dice-btn {
+  border-radius: 50%;
+  border-style: none;
+  background-color: #53ffaa;
+  height: 64px;
+  width: 64px;
+  margin-top: 20px;
+  position: absolute;
+  left: 135px;
+}
+
+.dice-svg {
+  height: 24px;
+  width: 24px;
+}
+
+h1 {
+  color:#cee3e9 ;
+  font-size: 30px;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+h2 {
+  color: #53ffaa;
+  font-size: 13px;
+}

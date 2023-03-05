@@ -34,17 +34,21 @@ class Advice extends React.Component {
          {
           this.state.loadedAdvice &&
           <div>
-            <h2>#{this.state.id}</h2>
-            <br></br>
+            <h2> Advice #{this.state.id}</h2>
             <h1>"{this.state.advice}"</h1>
           </div>
         }
-          <div> 
-           < Divider/>
-          </div>
-        <button type='button'
+        <div className='divider-container'>
+          < Divider className='divider-svg'/>
+        </div>
+        
+    
+        <button className='dice-btn' type='button'
         onClick={() => this.getNewAdvice()}> 
-          <Dice/>
+        <div>
+        <Dice className='dice-svg'/>
+        </div>
+         
         </button>
         </div>
     )
@@ -55,7 +59,12 @@ function App() {
   return (
     <div className="App">
       <header>
-      < Advice/>
+        <div className='app-body-container'>
+          <div className='loaded-advice-container'>
+            < Advice/>
+          </div> 
+        </div>
+      
       </header>
     
     </div>
